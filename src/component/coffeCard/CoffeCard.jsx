@@ -25,7 +25,7 @@ const CoffeCard = ( { coffe , coffes, setCoffes } ) => {
         })
             .then((result) => {
                 if (result.isConfirmed) {
-                    fetch(`https://coffe-store-server-j4bumqy88-al-jabirs-projects.vercel.app/coffee/${id}`, {
+                    fetch(`http://localhost:5000/coffee/${id}`, {
                         method: "DELETE"
                     })
                         .then( res => res.json())

@@ -6,6 +6,7 @@ function App() {
   // const [count, setCount] = useState(0)
   const loadedCoffes = useLoaderData();
   const [ coffes, setCoffes ] = useState( loadedCoffes );
+  console.log(coffes);
 
   return (
     <div className="w-fit m-auto  ">

@@ -15,7 +15,7 @@ const AddCoffe = () => {
         const newCoffe = {name, catagory, details, quantity};
         console.log(newCoffe);
 
-        fetch('https://coffe-store-server-j4bumqy88-al-jabirs-projects.vercel.app/coffee', {
+        fetch(`$(import.meta.env.VITE_SERVER_BASE_URL)/coffee`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
